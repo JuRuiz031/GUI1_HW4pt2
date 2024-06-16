@@ -1,0 +1,44 @@
+<!-- Juan Fernando Ruiz HW3 for GUI1 Summer 2024, finished on 6/16/2024-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Multiplication Table</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+  <form id="multiplicationForm" class="validate">
+    <label for="startRow">Start Row:</label>
+    <div class="slider-container">
+      <input type="number" id="startRow" name="startRow" value="0" data-slider-min="-200" data-slider-max="200" data-slider-value="0">
+      <div id="startRowSlider" class="slider"></div>
+    </div>
+    <label for="endRow">End Row:</label>
+    <div class="slider-container">
+      <input type="number" id="endRow" name="endRow" value="10" data-slider-min="-200" data-slider-max="200" data-slider-value="10">
+      <div id="endRowSlider" class="slider"></div>
+    </div>
+    <label for="startCol">Start Col:</label>
+    <div class="slider-container">
+      <input type="number" id="startCol" name="startCol" value="0" data-slider-min="-200" data-slider-max="200" data-slider-value="0">
+      <div id="startColSlider" class="slider"></div>
+    </div>
+    <label for="endCol">End Col:</label>
+    <div class="slider-container">
+      <input type="number" id="endCol" name="endCol" value="10" data-slider-min="-200" data-slider-max="200" data-slider-value="10">
+      <div id="endColSlider" class="slider"></div>
+    </div>
+    <button type="submit">Generate Table</button>
+  </form>
+  <div id="errorContainer" class="error"></div>
+  <div id="tableContainer"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+  <script src="JS/script.js"></script>
+</body>
+</html>
